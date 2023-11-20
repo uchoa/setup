@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Package installation
+exec $HOME/.local/src/setup/archlinux/install-packages
+
+# Setyp routine common to other platforms
+exec $HOME/.local/src/setup/common/setup-environment
+
+# Setup routine specific to Arch Linux
+# THIS SECTION MUST BE THE LAST ONE
+exec $HOME/.local/src/setup/archlinux/setup-environment
+

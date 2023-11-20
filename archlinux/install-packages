@@ -1,0 +1,41 @@
+#!/usr/bin/sh
+
+# Installs mandoc
+# THIS MUST BE THE FIRST SET INSTALLED
+sudo pacman -S --noconfirm man-db man-pages
+
+# Neovim will to be the primary editor
+sudo pacman -S --noconfirm neovim
+
+# This section installs tools that are important for downloading files from
+# different sources, including some that will be used during setup.
+sudo pacman -S --noconfirm curl wget
+sudo pacman -S --noconfirm git lazygit
+
+# OpenSSH and GnuPG
+sudo pacman -S --noconfirm openssh gnupg
+
+# Installs login greeter
+sudo pacman -S --noconfirm greetd greetd-tuigreet
+
+# Mount and unmount USB devices
+sudo pacman -S --noconfirm udisks2
+
+## START TERMINAL SECTION
+
+# -- Z Shell
+sudo pacman -S --noconfirm zsh
+
+# -- tmux is a must have
+sudo pacman -S --noconfirm tmux
+
+# -- TaskWarrior
+sudo pacman -S --noconfirm task vit
+
+# -- Some other useful TUI applications
+sudo pacman -S --noconfirm xplr neofetch
+
+## INSTALL SWAY
+sudo pacman -S --noconfirm sway swaylock swayidle swaybg waybar foot polkit
+sudo pacman -S --noconfirm waybar ttf-font-awesome wofi
+

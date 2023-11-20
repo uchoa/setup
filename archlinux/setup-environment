@@ -1,0 +1,21 @@
+#!/usr/bin/sh
+
+# Creates symlinks to Neovim
+#    vi  -> nvim
+#    vim -> nvim
+sudo ln -s /usr/bin/nvim /usr/bin/vi
+sudo ln -s /usr/bin/nvim /usr/bin/vim
+
+# Fixes issue with <dead-acute>c = ç
+ln -s $HOME/.local/src/dotfiles/.XCompose $HOME/.XCompose
+
+# Installs unpackaged fonts
+ln -s $HOME/.local/src/setup/common/fonts/operator-mono/OperatorMono*.otf $HOME/.local/share/fonts/.
+fc-cache -fv
+
+# Sets greetd/tuigreeter as the system greeter
+# THIS SECTION MUST BE THE LAST SECTION
+sudo rm /etc/greetd/config.toml
+sudo ln -s $HOME/.local/src/setup/archlinux/root/etc/greetd/config.toml /etc/greetd/config.toml
+sudo systemctl enable --now greetd
+

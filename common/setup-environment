@@ -1,0 +1,27 @@
+#!/usr/bin/sh
+
+#########################
+#
+# TODO git clone git@github.com:uchoa/dotfiles to ~/.local/src/dotfiles
+# TODO git clone git@github.com:uchoa/setup to ~/.local/src/setup
+# TODO git clone git@github.com:uchoa/dotfiles-pvt to ~/.local/src/pvt/dotfiles
+# TODO git clone git@github.com:uchoa/setup-pvt to ~/.local/src/pvt/setup
+#
+# #######################
+
+## SETS USER'S DOT FILES
+#
+
+#  -- bash
+ln -s $HOME/.local/src/dotfiles/.bash_aliases $HOME/.bash_aliases
+ln -s $HOME/.local/src/dotfiles/.bash_profile $HOME/.bash_profile
+ln -s $HOME/.local/src/dotfiles/.bashrc $HOME/.bashrc
+
+#  -- git
+ln -s $HOME/.local/src/dotfiles/.gitconfig $HOME/.gitconfig
+ln -s $HOME/.local/src/dotfiles/.gitconfig.begen $HOME/.gitconfig.begen
+ln -s $HOME/.local/src/dotfiles/.gitconfig.scienti $HOME/.gitconfig.scienti
+ln -s $HOME/.local/src/dotfiles/.gitconfig.uchoa $HOME/.gitconfig.uchoa
+
+#
+#####
