@@ -24,7 +24,7 @@ sudo pacman -S --noconfirm udisks2
 ## START TERMINAL SECTION
 
 # -- Z Shell
-sudo pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm zsh zsh-syntax-highlighting zsh-theme-powerlevel10k
 
 # -- tmux is a must have
 sudo pacman -S --noconfirm tmux
@@ -33,9 +33,27 @@ sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm task vit
 
 # -- Some other useful TUI applications
-sudo pacman -S --noconfirm xplr neofetch
+sudo pacman -S --noconfirm vifm neofetch unzip
 
-## INSTALL SWAY
+## Install Yay
+sudo pacman -S --noconfirm --needed git base-devel && mkdir $HOME/.local/tmp && cd $HOME/.local/tmp && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay
+yay -Y --gendb --noconfirm
+yay -Syu --devel --noconfirm
+
+### INSTALL SWAY
+# 
+# Basics
+#
 sudo pacman -S --noconfirm sway swaylock swayidle swaybg waybar foot polkit
-sudo pacman -S --noconfirm waybar ttf-font-awesome wofi
+sudo pacman -S --noconfirm waybar ttf-font-awesome ttf-roboto-mono-nerd wofi
+sudo pacment -S --noconfirm brightnessctl autotiling-rs gammastep mako
 
+yay -S --noconfirm sworkstyle
+
+## GUI Applications
+# -- Firefox
+sudo pacman -S --noconfirm firefox
+
+## Dev Tools
+# -- Podman
+sudo pacman -S --noconfirm podman podman-compose podman-docker

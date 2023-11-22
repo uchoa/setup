@@ -10,8 +10,26 @@ sudo ln -s /usr/bin/nvim /usr/bin/vim
 ln -s $HOME/.local/src/dotfiles/.XCompose $HOME/.XCompose
 
 # Installs unpackaged fonts
-ln -s $HOME/.local/src/setup/common/fonts/operator-mono/OperatorMono*.otf $HOME/.local/share/fonts/.
+ln -s $HOME/.local/src/setup/common/fonts/operator-mono-nerd/*.otf $HOME/.local/share/fonts/.
 fc-cache -fv
+
+# Z Shell configuration
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+rm $HOME/.zshrc
+ln -s $HOME/.local/src/dotfiles/.zshrc $HOME/.
+ln -s $HOME/.local/src/dotfiles/.p10k.zsh $HOME/.
+ln -s $HOME/.local/src/dotfiles/.config/zsh $HOME/.config/.
+ln -s /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme $HOME/.oh-my-zsh/custom/themes/powerlevel10k.zsh-theme
+
+## SWAY
+#
+ln -s $HOME/.local/src/dotfiles/.config/sway		$HOME/.config/.
+ln -s $HOME/.local/src/dotfiles/.config/foot		$HOME/.config/.
+ln -s $HOME/.local/src/dotfiles/.config/waybar		$HOME/.config/.
+ln -s $HOME/.local/src/dotfiles/.config/gammastep	$HOME/.config/.
+ln -s $HOME/.local/src/dotfiles/.config/mako 		$HOME/.config/.
+ln -s $HOME/.local/src/dotfiles/.config/sworkstyle 	$HOME/.config/.
 
 # Sets greetd/tuigreeter as the system greeter
 # THIS SECTION MUST BE THE LAST SECTION
