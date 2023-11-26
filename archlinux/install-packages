@@ -33,7 +33,7 @@ sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm task vit
 
 # -- Some other useful TUI applications
-sudo pacman -S --noconfirm vifm neofetch unzip
+sudo pacman -S --noconfirm xplr vifm neofetch unzip
 
 ## Install Yay
 sudo pacman -S --noconfirm --needed git base-devel && mkdir $HOME/.local/tmp && cd $HOME/.local/tmp && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay
@@ -54,6 +54,18 @@ yay -S --noconfirm sworkstyle
 # -- Firefox
 sudo pacman -S --noconfirm firefox
 
-## Dev Tools
+
+### Dev Tools
+#
+# -- Programming Languages
+sudo pacman -S --noconfirm go gopls
+yay -S --noconfirm golangci-lint
+
+#
+# -- Nodejs/npm
+sudo pacman -S --noconfirm npm
+
+#
 # -- Podman
 sudo pacman -S --noconfirm podman podman-compose podman-docker
+
