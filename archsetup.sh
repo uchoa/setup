@@ -25,7 +25,13 @@ yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf
 yay -S --noconfirm ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
 
 # DEV TOOLS
-yay -S --noconfirm neovim go gopls luarocks lua51 nodejs npm jq hq yq
+yay -S --noconfirm neovim go gopls luarocks lua51 jq hq yq
+yay -S --noconfirm podman podman-compose podman-desktop podman-tui
+# -- `NodeJS` MUST be installed after `podman-desktop` due to a build conflict
+# -- `with nodejs-lts-iron`.
+yay -R --noconfirm nodejs-lts-iron  # remove if it is still in the system
+yay -S --noconfirm nodejs npm
+yay -S --noconfirm bruno
 
 # -- Install tree-sitter executable for neovim
 sudo npm install -g tree-sitter-cli
