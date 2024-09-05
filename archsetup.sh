@@ -15,7 +15,7 @@ yay -S --noconfirm xorg-xinput
 yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat
 
 # DESKTOP
-yay -S --noconfirm picom
+yay -S --noconfirm picom feh
 
 # UTILITIES
 yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie
