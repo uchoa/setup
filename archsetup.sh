@@ -15,17 +15,17 @@ yay -S --noconfirm xorg-xinput
 yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat
 
 # DESKTOP
-yay -S --noconfirm picom feh
+yay -S --noconfirm picom feh xss-lock redshift
 
 # UTILITIES
-yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie
-yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf
+yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl
+yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3
 
 # FONTS
 yay -S --noconfirm ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
 
 # DEV TOOLS
-yay -S --noconfirm neovim go gopls luarocks lua51 jq hq yq
+yay -S --noconfirm neovim go gopls luarocks lua51 jq hq yq lazygit
 yay -S --noconfirm podman podman-compose podman-desktop podman-tui
 # -- `NodeJS` MUST be installed after `podman-desktop` due to a build conflict
 # -- `with nodejs-lts-iron`.
@@ -37,7 +37,7 @@ yay -S --noconfirm bruno
 sudo npm install -g tree-sitter-cli
 
 # GUI APPLICATIONS
-yay -S --noconfirm firefox google-chrome slack-desktop
+yay -S --noconfirm firefox google-chrome slack-desktop zen-browser-bin
 
 #####
 ## SETUP DOTFILES AND OTHER SYSTEM CONFIGURATIONS
