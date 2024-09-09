@@ -15,7 +15,7 @@ yay -S --noconfirm xorg-xinput bluez bluez-utils
 yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat
 
 # DESKTOP
-yay -S --noconfirm picom feh xss-lock redshift
+yay -S --noconfirm picom feh xss-lock redshift dmenu-bluetooth networkmanager-dmenu-git
 
 # UTILITIES
 yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl zk task vit
