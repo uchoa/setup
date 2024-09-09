@@ -18,7 +18,7 @@ yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions stars
 yay -S --noconfirm picom feh xss-lock redshift
 
 # UTILITIES
-yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl
+yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl zk task vit
 yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3
 
 # FONTS
