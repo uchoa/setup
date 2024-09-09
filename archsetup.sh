@@ -8,8 +8,8 @@ makepkg -si
 cd ..
 sudo rm -Rf yay
 
-# HARDWARE CONFIGURATION UTILITIES
-yay -S --noconfirm xorg-xinput
+# HARDWARE
+yay -S --noconfirm xorg-xinput bluez bluez-utils
 
 # TERMINAL
 yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat
@@ -19,7 +19,7 @@ yay -S --noconfirm picom feh xss-lock redshift
 
 # UTILITIES
 yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl zk task vit
-yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3
+yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3 openssh gnupg
 
 # FONTS
 yay -S --noconfirm ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
@@ -45,4 +45,5 @@ yay -S --noconfirm firefox google-chrome slack-desktop zen-browser-bin
 
 # Set zsh as the default shell
 chsh -s /usr/bin/zsh
+
 
