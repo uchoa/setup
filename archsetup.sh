@@ -37,7 +37,7 @@ yay -S --noconfirm bruno
 sudo npm install -g tree-sitter-cli
 
 # GUI APPLICATIONS
-yay -S --noconfirm firefox google-chrome slack-desktop zen-browser-bin
+yay -S --noconfirm firefox google-chrome slack-desktop 
 
 #####
 ## SETUP DOTFILES AND OTHER SYSTEM CONFIGURATIONS
