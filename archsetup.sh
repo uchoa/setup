@@ -12,14 +12,14 @@ sudo rm -Rf yay
 yay -S --noconfirm xorg-xinput bluez bluez-utils
 
 # TERMINAL
-yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat
+yay -S --noconfirm wezterm zsh zsh-syntax-highlighting zsh-autosuggestions starship tmux xclip fzf bat yazi
 
 # DESKTOP
 yay -S --noconfirm picom feh xss-lock redshift dmenu-bluetooth networkmanager-dmenu-git
 
 # UTILITIES
 yay -S --noconfirm man-db man-pages fastfetch ripgrep udisks2 udiskie brightnessctl zk task vit
-yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3 openssh gnupg
+yay -S --noconfirm 1password 1password-cli zathura zathura-pdf-mupdf rclone fuse3 openssh gnupg keychain
 
 # FONTS
 yay -S --noconfirm ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
