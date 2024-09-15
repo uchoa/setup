@@ -24,6 +24,22 @@ brew install node
 brew install --cask nikitabobko/tap/aerospace
 brew tap FelixKratz/formulae
 brew install borders
+brew install --cask alfred
+
+# GUI APPLICATIONS
+brew install --cask 1password 1password-cli
+brew install --cask whatsapp
+brew install --cask hazel
+
+### MAC APP STORE APPLICATIONS
+#-- Start by installing mas
+brew install mas
+
+mas install 937984704  # Amphetamine
+mas install 975937182  # Fantastical
+mas install 1290358394 # Cardhop
+mas install 1289583905 # Pixelmator Pro
+mas install 1569813296 # 1Password for Safari
 
 ### SETUP DOTFILES AND OTHER SYSTEM CONFIGURATIONS
 #
