@@ -20,6 +20,11 @@ brew install wezterm tmux gh neovim go gopls luarocks jq hq lazygit mitmproxy po
 
 brew install node
 
+# WINDOW MANAGER
+brew install --cask nikitabobko/tap/aerospace
+brew tap FelixKratz/formulae
+brew install borders
+
 ### SETUP DOTFILES AND OTHER SYSTEM CONFIGURATIONS
 #
 
@@ -33,3 +38,9 @@ dotfiles config --local status.showUntrackedFiles no
 mkdir -p $HOME/.config/tmux/plugins
 git clone git@github.com:tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
 
+#-- Start Aerospace Window Manager
+osascript -e 'tell application "System Events" to ¬' \
+              -e 'make new login item with properties ¬' \
+              -e '{name:"Aerospace", path:"/Applications/AeroSpace.app/", hidden:true}'
+
+brew services start borders
