@@ -40,6 +40,7 @@ mas install 975937182  # Fantastical
 mas install 1290358394 # Cardhop
 mas install 1289583905 # Pixelmator Pro
 mas install 1569813296 # 1Password for Safari
+mas install 803453959  # Slack for Desktop
 
 ### SETUP DOTFILES AND OTHER SYSTEM CONFIGURATIONS
 #
