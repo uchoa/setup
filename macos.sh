@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+sudo clear # This line is here only for capturing sudo password
+
 ### INSTALL HOMEBREW BEFORE ANYTHING
 
 ### SECURITY
@@ -17,7 +19,6 @@ brew install --cask font-jetbrains-mono-nerd-font
 
 # DEVELOPMENT ENVIRONMENT
 brew install wezterm tmux gh neovim go gopls luarocks jq hq lazygit mitmproxy podman podman-compose podman-tui
-
 brew install node
 
 # WINDOW MANAGER
@@ -30,6 +31,7 @@ brew install --cask alfred
 brew install --cask 1password 1password-cli
 brew install --cask whatsapp
 brew install --cask hazel
+brew install --cask google-drive
 
 ### MAC APP STORE APPLICATIONS
 #-- Start by installing mas
