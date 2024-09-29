@@ -32,6 +32,7 @@ brew install --cask 1password 1password-cli
 brew install --cask whatsapp
 brew install --cask hazel
 brew install --cask google-drive
+brew install --cask libreoffice
 
 ### MAC APP STORE APPLICATIONS
 #-- Start by installing mas
