@@ -18,8 +18,8 @@ brew install --cask font-inconsolata-go-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
 
 # DEVELOPMENT ENVIRONMENT
-brew install wezterm tmux gh neovim go gopls luarocks jq hq lazygit mitmproxy podman podman-compose podman-tui
-brew install node
+brew install wezterm tmux gh neovim ripgrep go gopls luarocks jq hq lazygit mitmproxy podman podman-compose podman-tui
+brew install node deno
 
 # WINDOW MANAGER
 brew install --cask nikitabobko/tap/aerospace
