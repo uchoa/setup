@@ -12,13 +12,14 @@ echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" | tee ~/.gnupg/gpg-age
 pkill -TERM gpg-agent
 
 # TERMINAL UTILITIES
-brew install zsh-syntax-highlighting zsh-autosuggestions starship fzf bat
+brew install zsh-syntax-highlighting zsh-autosuggestions starship fzf bat btop
 brew install zk task vit
 brew install --cask font-inconsolata-go-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-fira-code-nerd-font
 
 # DEVELOPMENT ENVIRONMENT
-brew install wezterm tmux gh neovim ripgrep go gopls luarocks jq hq lazygit mitmproxy podman podman-compose podman-tui
+brew install wezterm tmux gh neovim ripgrep go gopls luarocks jq hq yq lazygit mitmproxy podman podman-compose podman-tui rust
 brew install node deno
 
 # WINDOW MANAGER
